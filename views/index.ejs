@@ -1,0 +1,10 @@
+<%- include('./partials/header') -%>
+
+<h1>Users</h1>
+<ul id="users">
+  <% users.forEach(function(user){ %>
+    <%- include('./user/show', {user: user}); %>
+  <% }) %>
+</ul>
+
+<%- include('./partials/footer') -%>
