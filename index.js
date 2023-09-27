@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 
 //route for index page
-app.get("/users", async (req, res) => {
+app.get("/users", async (_req, res) => {
   try {
     const users = await prisma.user.findMany();
 
