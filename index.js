@@ -44,7 +44,7 @@ app.post("/users", async (req, res) => {
     });
 
     // Rerender users
-    res.redirect("/users?sucess=true");
+    res.redirect("/users?success=true");
   } catch (error) {
     console.error("Error creating user:", error);
     res.status(500).send("Internal Server Error");
