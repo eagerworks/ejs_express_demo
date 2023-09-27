@@ -17,7 +17,7 @@ app.get("/users", async (req, res) => {
     const users = await prisma.user.findMany();
 
     res.render("index", {
-      users: users,
+      users,
       title: "EJS example",
       header: "Some users",
     });
